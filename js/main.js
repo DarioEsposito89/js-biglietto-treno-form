@@ -28,13 +28,13 @@ btnGenerate.addEventListener("click", function () {
             discountType = "Biglietto standard";
         }
 
-        // calcolo prezzo finale
+        // calcolo del prezzo finale
         const finalPrice = ticketPrice - discount;
         console.log("Prezzo dello sconto:", discount);
         console.log("Prezzo del biglietto finale:", finalPrice);
         console.log("Tipo di sconto:", discountType);
 
-        // creazione dati biglietto in pagina
+        // creazione dati biglietto 
         document.getElementById("passenger").innerHTML = passengerName;
         document.getElementById("discount").innerHTML = discountType;
         document.getElementById("ticket-price").innerHTML = finalPrice.toFixed (2) + "€";
@@ -47,7 +47,7 @@ btnGenerate.addEventListener("click", function () {
         console.log("Creazione codice CP:", cpCode);
         document.getElementById("cp-code").innerHTML = cpCode;
         
-        // apparizione sezione ticket
+        // apparizione biglietto
         document.getElementById("ticket-container").style.visibility="visible";
     })
 
@@ -66,7 +66,7 @@ btnCancel.addEventListener("click", function () {
         document.getElementById("wagon").innerHTML = "";
         document.getElementById("cp-code").innerHTML = "";
 
-        // sparizione sezione ticket
+        // sparizione biglietto
         document.getElementById("ticket-container").style.visibility="hidden";
     })
 
