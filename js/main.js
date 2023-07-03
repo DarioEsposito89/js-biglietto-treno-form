@@ -48,7 +48,7 @@ btnGenerate.addEventListener("click", function () {
         document.getElementById("cp-code").innerHTML = cpCode;
         
         // apparizione sezione ticket
-        document.getElementById("ticket-container").className = "bottom show";
+        document.getElementById("ticket-container").style.visibility="visible";
     })
 
 // evento al click del pulsante Annulla
@@ -67,7 +67,7 @@ btnCancel.addEventListener("click", function () {
         document.getElementById("cp-code").innerHTML = "";
 
         // sparizione sezione ticket
-        document.getElementById("ticket-container").className = "bottom hidden";
+        document.getElementById("ticket-container").style.visibility="hidden";
     })
 
 
