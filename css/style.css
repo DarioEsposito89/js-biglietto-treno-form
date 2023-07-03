@@ -1,0 +1,29 @@
+.mybg-primary-color {
+    background-color: #b91450;
+}
+
+.my-primary-color {
+    color: #b91450;
+}
+
+.my-border-color-primary {
+    border-color: #b91450; 
+}
+
+.my-border-color-secondary {
+    border-color: rgb(255, 0, 0);
+}
+
+h2 {
+    color: white;
+}
+
+#generate:hover {
+    color: #b91450;
+    border-color: orange !important;
+}
+#cancel:hover {
+    color: #b91450;
+    border-color: orange !important;
+}
+
